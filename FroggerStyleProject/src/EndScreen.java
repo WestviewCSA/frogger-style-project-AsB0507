@@ -20,7 +20,7 @@ public class EndScreen{
 	public EndScreen() {
 		
 		//load main image front or forward view
-		forward 	= getImage("/imgs/"+"lost.png"); //load the image for Tree
+		forward 	= getImage("/imgs/"+"endscreen1.png"); //load the image for Tree
 		//backward 	= getImage("/imgs/"+"backward.png"); //load the image for Tree
 	//	left 		= getImage("/imgs/"+"left.png"); //load the image for Tree
 		//right 		= getImage("/imgs/"+"right.png"); //load the image for Tree

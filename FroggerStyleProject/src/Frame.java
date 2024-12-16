@@ -250,14 +250,14 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 		 	}
 		 }	
 		 	
-			 
+		//collision code
 			 duck.paint(g);
 		if(bread.collided(duck)) {
 			score++;
 			duck.setX(286);
 			duck.setY(500);
 		}
-		
+		//win/end screen
 		if(lives <= 0) {
 			end.paint(g);
 		}
@@ -459,7 +459,12 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
 			duck.move(1);
 		}
 		
-		
+		if(arg0.getKeyCode()==82) {
+			duck.setX(286);
+			duck.setY(500);
+			lives += 3;
+			score += 0;
+		}
 	}
 
 	@Override
